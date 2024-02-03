@@ -1,9 +1,6 @@
-'use client';
-import styles from './page.module.css';
-
 export default function Home() {
 	return (
-		<main className={styles.main}>
+		<main>
 			<h1>Next js - Store</h1>
 		</main>
 	);
