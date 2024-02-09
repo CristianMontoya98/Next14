@@ -1,6 +1,7 @@
+import styles from './hero.module.css';
 export const Hero = () => {
 	return (
-		<section>
+		<section className={styles.hero}>
 			<h1>Hero</h1>
 		</section>
 	);
