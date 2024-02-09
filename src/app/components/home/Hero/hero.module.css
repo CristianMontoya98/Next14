@@ -5,4 +5,10 @@
 .hero > h1 {
 	font-size: 3rem;
 	color: blueviolet;
+	text-align: center;
+}
+
+.hero > h2 {
+	font-weight: bold;
+	text-align: center;
 }
