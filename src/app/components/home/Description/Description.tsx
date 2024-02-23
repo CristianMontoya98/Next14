@@ -1,18 +1,38 @@
-import styles from './description.module.scss';
+'use client';
 import Image from 'next/image';
+import classNames from 'classnames/bind';
+import { useState } from 'react';
+import styles from './description.module.scss';
 import { placeholderImage } from './placeholderImg';
+
+const placeholderImg = placeholderImage;
 export const Description = () => {
+	const [hasBorder, setBorder] = useState(false);
+
+	const handleClick = () => setBorder(!hasBorder);
+
+	const cx = classNames.bind(styles);
+
+	const buttonStyles = cx('Description__button', {
+		'Description__button--border': hasBorder,
+	});
+
 	return (
 		<section className={styles.Description}>
-			<div className={styles.Description__imageContainer}>
-				<Image
-					src='/images/description.jpeg'
-					alt='products marketplace'
-					fill
-					placeholder='blur'
-					blurDataURL={placeholderImage}
-				/>
-			</div>
+			<button
+				onClick={handleClick}
+				className={buttonStyles}
+			>
+				<div className={styles.Description__imageContainer}>
+					<Image
+						src='/images/description.jpeg'
+						alt='products marketplace'
+						fill
+						placeholder='blur'
+						blurDataURL={placeholderImg}
+					/>
+				</div>
+			</button>
 			<div className={styles.Description__text}>
 				<h2>Bring the future today</h2>
 				<p>
