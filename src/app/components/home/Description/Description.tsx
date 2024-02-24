@@ -8,9 +8,7 @@ import { placeholderImage } from './placeholderImg';
 const placeholderImg = placeholderImage;
 export const Description = () => {
 	const [hasBorder, setBorder] = useState(false);
-
 	const handleClick = () => setBorder(!hasBorder);
-
 	const cx = classNames.bind(styles);
 
 	const buttonStyles = cx('Description__button', {
