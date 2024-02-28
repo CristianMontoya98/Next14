@@ -10,7 +10,10 @@ const getProducts = async () => {
 	const data = await response.json();
 	return data;
 };
-
+/* Los componentes asincronos son una 
+caracteristica del server side rendering de nextjs
+que permite ejecutar peticiones si usar un useEffect 
+como se haria con react */
 export const MainProducts = async () => {
 	const products = await getProducts();
 
