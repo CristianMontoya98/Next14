@@ -31,8 +31,9 @@ export const MainProducts = async () => {
 						<article key={product.id}>
 							<p>{product.title}</p>
 							<Image
+								height={400}
+								width={400}
 								src={imageSrc}
-								fill
 								alt={product.title}
 								loading='eager'
 							/>
