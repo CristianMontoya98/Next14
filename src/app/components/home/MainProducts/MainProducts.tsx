@@ -24,15 +24,14 @@ export const MainProducts = async () => {
 	return (
 		<section className={styles.MainProducts}>
 			<h3>✨ New products released!</h3>
-			<div className={styles.MainProducts__grid}>
+			<div className={styles.MainProducts__list}>
 				{products?.map((product: any) => {
 					const imageSrc = product.images[0].src;
 					return (
 						<article key={product.id}>
 							<p>{product.title}</p>
 							<Image
-								height={400}
-								width={400}
+								fill
 								src={imageSrc}
 								alt={product.title}
 								loading='eager'
