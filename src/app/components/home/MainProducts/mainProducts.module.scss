@@ -3,30 +3,30 @@
 		text-align: center;
 		font-size: 3rem;
 	}
-	&__grid {
+	&__list {
 		display: grid;
 		width: 100%;
 		grid-template-columns: repeat(2, 1fr);
 		grid-template-rows: 400px 400px;
-	}
-	& > article {
-		position: relative;
-		z-index: 1;
-		min-height: 400px;
+		article {
+			position: relative;
+			z-index: 1;
+			min-height: 541px;
+		}
+		p {
+			position: absolute;
+			z-index: 4;
+			top: 0;
+			right: 1.5rem;
+			z-index: 2;
+			font-size: 1.5rem;
+			font-weight: 700;
+			max-width: 300px;
+			text-align: right;
+		}
 	}
 	& > img {
 		opacity: 0.4;
 		object-fit: cover;
-	}
-
-	& > p {
-		position: absolute;
-		top: 0;
-		right: 1.5rem;
-		z-index: 2;
-		font-size: 1.5rem;
-		font-weight: 700;
-		max-width: 300px;
-		text-align: right;
 	}
 }
