@@ -13,7 +13,8 @@ export default function NotFound() {
 				height={300}
 			/>
 			<h2 className={styles.NotFound__subtitle}>
-				¡Uy, parece que el enlace se escondió!
+				¡Uy, parece que el enlace al que quieres acceder no está
+				disponible!
 			</h2>
 			<p className={styles.NotFound__description}>
 				Pero nuestra tienda está abierta las 24/7
