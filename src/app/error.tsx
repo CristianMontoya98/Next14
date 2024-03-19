@@ -13,7 +13,7 @@ export default function GloablError({ reset }: ErrorPageProps) {
 				alt='Error'
 			/>
 			<p className={styles.Error__message}>
-				Al parecer ha ocurrido un error, pero no te sientas mal
+				Al parecer ha ocurrido un error
 			</p>
 			<button
 				className={styles.Error__button}
