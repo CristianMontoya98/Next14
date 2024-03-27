@@ -3,8 +3,12 @@ import styles from './mainProducts.module.scss';
 import { getProducts } from 'app/app/services/shopify';
 
 export const MainProducts = async () => {
-	const products = await getProducts();
+	//Esta es una manera de hacer la peticion que trae los productos:
+	//const products = await getProducts();
 
+	//Back for frontend trata de ofuscar la peticion:
+	const response = await fetch('http://localhost:3000/api');
+	const { products } = await response.json();
 	return (
 		<section className={styles.MainProducts}>
 			<h3>✨ New products released!</h3>
