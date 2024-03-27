@@ -1,4 +1,5 @@
+import { getProducts } from '../services/shopify';
 export async function GET() {
-	const message = 'Hello World';
-	return Response.json({ message });
+	const products = await getProducts();
+	return Response.json({ products });
 }
