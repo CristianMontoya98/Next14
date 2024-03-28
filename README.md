@@ -1,5 +1,6 @@
 This is a [Next.js](https://nextjs.org/) project to study next 14
 - Creation of a virtual store
+- Use of the shopify api
 
 ## Getting Started
 
