@@ -1,6 +1,5 @@
 import Image from 'next/image';
 import styles from './mainProducts.module.scss';
-import { getProducts } from 'app/app/services/shopify';
 
 export const MainProducts = async () => {
 	//Esta es una manera de hacer la peticion que trae los productos:
