@@ -8,6 +8,7 @@ export const getProducts = async (id?: string): Promise <any> => {
 			headers: new Headers({
 				'X-Shopify-Access-Token': env.SHOPIFY_TOKEN,
 			}),
+			//Add the force cache
 			cache: 'force-cache',
 			next: {
 				tags: ['main-products']
