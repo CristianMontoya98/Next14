@@ -4,6 +4,7 @@ import { redirect } from 'next/navigation';
 interface ProductPageProps {
     searchParams: {
         id: string;
+        name: string;
     };
 }
 
